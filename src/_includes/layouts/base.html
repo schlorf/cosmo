@@ -50,14 +50,77 @@
             rel="preload"
             as="font"
             type="font/woff2"
-            href="/assets/fonts/roboto-v29-latin-regular.woff2"
+            href="/assets/fonts/lato-v24-latin-300.woff2"
             crossorigin
         />
         <link
             rel="preload"
             as="font"
             type="font/woff2"
-            href="/assets/fonts/roboto-v29-latin-700.woff2"
+            href="/assets/fonts/lato-v24-latin-300italic.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/lato-v24-latin-700.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/lato-v24-latin-700italic.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/lato-v24-latin-900.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/lato-v24-latin-900italic.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/lato-v24-latin-italic.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/lato-v24-latin-regular.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/nunito-sans-v15-latin-800.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/nunito-sans-v15-latin-900.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/nunito-sans-v15-latin-regular.woff2"
             crossorigin
         />
 
@@ -68,9 +131,8 @@
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css" />
-        <link rel="stylesheet" href="/assets/css/dark.css" />
-        <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/faq.js"></script>
 
         {% block head %}{% endblock %}
 
@@ -89,5 +151,11 @@
         {% include "components/header.html" %}
         <main id="main">{% block body %}{% endblock %}</main>
         {% include "components/footer.html" %}
+
+        <div class="made-in-austria-banner">
+            🇦🇹 Qualität aus Österreich
+        </div>
+
+        <img src="/assets/images/google_temp_1.png" class="fixed-img" alt="Google Bewertungen">
     </body>
 </html>

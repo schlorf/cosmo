@@ -1,134 +1,221 @@
 ---
-title: "About | Code Stitch Web Designs"
+title: "Über uns | Cosmo Digital"
 description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
-permalink: "about/"
+preloadImg: "/assets/images/typing_on_laptop.png"
+permalink: "ueber-uns/"
 eleventyNavigation:
-    key: About Us
+    key: Über uns
     order: 200
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/about.css"/>
 {% endblock %}
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
+    <div id="banner-1106-1112">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
+            <span class="cs-int-title">Über uns</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Start</a>
+                <a href="" class="cs-link cs-active">Über uns</a>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/typing_on_laptop.png">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg -->
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/typing_on_laptop.png">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg -->
+            <img decoding="async" src="/assets/images/typing_on_laptop.png" alt="mechanic" width="1280" height="568" aria-hidden="true">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg -->
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1095-1112">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!--Top left image-->
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/jan_mauer_flipped.jpg">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-17.jpg -->
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/jan_mauer_flipped.jpg">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-17.jpg -->
+                    <img loading="lazy" decoding="async" src="/assets/images/jan_mauer_flipped.jpg" alt="mechanic" width="542" height="608">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-17.jpg -->
+                </picture>
+                <!--Stripe background-->
+                <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-long.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Cosmo Digital in Ternitz</span>
+                <h2 class="cs-title">Ihr Partner für professionelle, leistungsstarke Webseiten</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
+                    Hallo, mein Name ist Jan Schlorf, und ich bin der Gründer und Hauptentwickler von Cosmo Digital. Als Experte im Webdesign und der Webentwicklung helfe ich Unternehmen, Selbstständigen und kleinen bis mittelständischen Unternehmen dabei, ihre digitale Präsenz auf das nächste Level zu heben.
+                    <br/><br/>
+                    Im Gegensatz zu vielen, die das Webdesign im Selbststudium erlernt haben, habe ich mir meine Fähigkeiten durch fundierte Ausbildung und jahrelange Erfahrung erarbeitet. Dieses tiefgreifende Wissen ist für mich von entscheidender Bedeutung, denn es ermöglicht mir, Webseiten zu entwickeln, die nicht nur optisch ansprechend sind, sondern auch auf Leistung, Geschwindigkeit und Benutzerfreundlichkeit optimiert sind. 
+                    <br/><br/>
+                    Zusammen mit <b>externen Freelancern</b> aus unterschiedlichen Fachgebieten stelle ich sicher, dass jedes Projekt perfekt auf die individuellen Bedürfnisse meiner Kunden abgestimmt ist. Ich arbeite vor allem mit Selbstständigen und kleinen Unternehmen zusammen, die eine leistungsstarke, individuelle Webseite brauchen, die ihre Vision und ihre Marke auf eine professionelle Art und Weise online präsentiert.
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
+                <!--<ul class="cs-list">
+                    <li class="cs-li">We handle all makes and models</li>
+                    <li class="cs-li">We are endorsed by the local trading standards office</li>
+                    <li class="cs-li">All our technicians are equipped with the latest portable</li>
+                    <li class="cs-li">Proven results for setting exceptional standards</li>
+                    <li class="cs-li">Same day service for most repairs</li>
+                </ul>-->
+                <div class="cs-info">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/jan_avatar.png" alt="profile" width="52" height="52">
+                    <div class="cs-flex">
+                        <span class="cs-name">Ing. Jan Schlorf</span>
+                        <span class="cs-desc">Gründer von Cosmo Digital</span>
+                    </div>
                 </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
             </div>
         </div>
     </section>
 
-    {% include 'components/cta.html' %}
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-1331">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex-group">
+                    <span class="cs-topper">Ablauf</span>
+                    <h2 class="cs-title">So läuft unsere Zusammenarbeit ab</h2>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">1. Erstgespräch</h3>
+                    <p class="cs-item-text">
+                            Zu Beginn jedes Projekts führen wir ein ausführliches Erstgespräch, um Ihre Wünsche, Anforderungen und Ziele zu verstehen. 
+                            Dabei stellen wir Ihnen gezielte Fragen, um genau zu ermitteln, wie Ihre Webseite aussehen soll und welche Funktionen sie bieten muss.
+                            <br/>
+                            Zusätzlich erhalten Sie von uns einen Fragebogen, der uns hilft, Ihre Vorstellungen noch präziser zu erfassen und Ihre Vision bestmöglich umzusetzen.
+                        </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">2. Design</h3>
+                    <p class="cs-item-text">
+                        Wir entwickeln erste Designkonzepte und stimmen diese mit Ihnen ab, um ein ansprechendes, benutzerfreundliches Layout zu schaffen.
+                        <br/><br/>
+                        <b>Geld-zurück-Garantie:</b> Sollten Sie trotz mehrerer Überarbeitungen mit dem Design nicht zufrieden sein, übernehmen wir die Verantwortung. In diesem Fall erstatten wir Ihnen die Anzahlung vollständig zurück.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">3. Umsetzung</h3>
+                    <p class="cs-item-text">
+                        Nach der Designfreigabe beginnen wir mit der technischen Umsetzung Ihrer Webseite. Wir achten darauf, dass sie nicht nur optisch ansprechend, sondern auch schnell, funktional und auf allen Geräten optimal dargestellt wird.
+                        <br/><br/>
+                        <b>Glückwunsch!</b> Sie haben nun eine Webseite, die Ihnen nicht nur hilft, Ihr Geschäft erfolgreich zu präsentieren, sondern auch viele Jahre lang eine stabile und skalierbare Grundlage für Ihre Online-Präsenz bietet.
+                    </p>
+                </li>
+            </ul>
+            <a href="/kontakt" class="cs-button-12">
+                Jetzt starten
+                <picture class="cs-button-wrapper">
+                    <img class="cs-button-icon" src="/assets/svgs/angle-arrow.svg" alt="icon" loading="lazy" decoding="async" width="28" height="28">
+                </picture>
+            </a>
+        </div>
+
+        <!--Bubble Groups-->
+        <div class="cs-bubbles cs-bubbles1" aria-hidden="true"></div>
+        <div class="cs-bubbles cs-bubbles2" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+    <section id="faq-1458">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/beratung_sw.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png -->
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/beratung_sw.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png -->
+                    <img loading="lazy" decoding="async" src="/assets/images/beratung_sw.png" alt="body shop" width="522" height="609" aria-hidden="true">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png -->
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Wissenwertes</span>
+                <h2 class="cs-title">Häufig gestellte Fragen</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Was passiert, wenn mir das Design nicht gefällt?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Brauche ich bereits ein Logo, Visitenkarten, oder ähnliches?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Wie könnt Ihr eine von Hand programmierte, individuell gestaltete Webseite zu diesem Preis anbieten?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Warum verwendet ihr keine Baukastensysteme wie z.B. Wordpress oder Wix?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Kann auch ein Blog integriert werden?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                </ul>
+                <a href="/faq" class="cs-button-solid">Alle FAQs anzeigen</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}

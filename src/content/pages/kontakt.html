@@ -1,0 +1,103 @@
+---
+title: "Kontakt | Cosmo Digital"
+description: "Kontaktieren Sie uns: Hier finden Sie alle wichtigen Informationen, um schnell und einfach mit uns in Verbindung zu treten – per Telefon, E-Mail oder über unser Kontaktformular."
+permalink: "kontakt/"
+eleventyNavigation:
+    key: Contact Us
+    order: 600
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/kontakt.css"/>
+    <script defer src="/assets/js/submit-form.js"></script>
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <div id="spinner" class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Form -->
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Kontakt</span>
+                    <h1 class="cs-title">Bereit, loszulegen?</h1>
+                    <p class="cs-text">
+                        Ihre Webseite sollte nicht nur gut aussehen, sondern auch Ergebnisse liefern. Wir machen es möglich. In einem <b>unverbindlichen Erstgespräch</b> klären wir Ihre Anforderungen und das weitere Vorgehen.
+                        <br/>
+                        <a href="{{ client.calendlyLink }}" class="cs-button-12">
+                            Erstgespräch buchen
+                            <picture class="cs-button-wrapper">
+                                <img class="cs-button-icon" src="/assets/svgs/calendar.svg" alt="icon" loading="lazy" decoding="async" width="28" height="28">
+                            </picture>
+                        </a>
+                    </p>
+                </div>
+
+                <label>
+                    Name
+                    <input required type="text" id="Name" name="Name" placeholder="Name"/>
+                </label>
+
+                <label>
+                    Firma (optional)
+                    <input type="text" id="Firma" name="Firma" placeholder="Firma (optional)"/>
+                </label>
+                <label>
+                    E-Mail
+                    <input required type="email" id="Email" name="Email" placeholder="E-Mail"/>
+                </label>
+                <label>
+                    Telefonnummer
+                    <input required type="tel" id="Telefonnummer" name="Telefonnummer" placeholder="Telefonnummer"/>
+                </label>
+                <label class="cs-label-message">
+                    Nachricht
+                    <textarea required name="Nachricht" id="Nachricht" placeholder="Ihr Anliegen"></textarea>
+                </label>
+                <label class="cs-label-captcha">
+                    <span id="captcha-question"></span>
+                    <input required type="text" id="captcha" name="captcha" placeholder="Antwort"/>
+                </label>
+
+                <input type="text" id="honeypot" name="honeypot" style="display: none;" tabindex="-1" autocomplete="off">
+
+                <button class="cs-button-solid" type="submit">Absenden</button>
+            </form>
+
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">E-Mail</span>
+                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
+                <!--Phone-->
+                <span class="cs-header">Telefon</span>
+                <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                <!--Address-->
+                <span class="cs-header">Adresse</span>
+                <a class="cs-link" target="_blank" href="{{ client.address.mapLink }}">
+                    {{ client.address.lineOne }}<br/>
+                    <span class="cs-block">{{ client.address.zip }}
+                        {{ client.address.city }}<br/>Österreich</span>
+                </a>
+
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="/assets/images/jan_mauer.jpg"/>
+                    <img aria-hidden="true" decoding="async" src="/assets/images/jan_mauer.jpg" alt="building" loading="lazy" width="2500" height="1667"/>
+                </picture>
+            </div>
+        </div>
+    </section>
+{% endblock %}

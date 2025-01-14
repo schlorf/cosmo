@@ -1,5 +1,5 @@
 ---
-title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
+title: "Beeindruckende Webseiten für KMUs | Cosmo Digital | Ternitz, Niederösterreich"
 description: "Meta description for the page"
 preloadImg: "/assets/images/landing.jpg"
 permalink: "/"
@@ -12,25 +12,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
-
-    <!-- Script for Netlify Identity -->
-    <script
-        defer
-        src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-    ></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", (user) => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
-    </script>
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
 
     <!-- JSON Schema Markup -->
     <!-- prettier-ignore-start -->
@@ -78,566 +61,417 @@ eleventyNavigation:
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    <section id="hero-1349">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
+            <div class="cs-content">
+                <span class="cs-topper">Für KMUs und Selbstständige</span>
+                <h1 class="cs-title">Beeindruckende Webseiten, die abliefern</h1>
                 <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum
-                    varius. Nibh tortor id aliquet lectus proin nibh
-                    condimentum.
+                    Eine professionelle Online-Präsenz ist heutzutage unerlässlich. Wir planen, entwerfen und programmieren jede Webseite individuell. Das gewährleistet höchste Sicherheit, unschlagbare Ladezeiten und minimalen Wartungsaufwand. Oder kurz gesagt: Einen massiven Vorsprung gegenüber Ihrer Konkurrenz. 
+                    <br/><br/>
+                    Und Sie können sich auf das konzentrieren, was wirklich zählt: Ihr Geschäft.
                 </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                        class="cs-img"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                        alt="play icon"
-                        width="17"
-                        height="17"
-                    />
-                    Get in Touch
+                <a href="/kontakt" class="cs-button-12">
+                    Jetzt starten
+                    <picture class="cs-button-wrapper">
+                        <img class="cs-button-icon" src="/assets/svgs/angle-arrow.svg" alt="icon" loading="lazy" decoding="async" width="28" height="28">
+                    </picture>
                 </a>
             </div>
         </div>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/landing-m.webp"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/landing.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/landing.jpg"
-                alt="new home"
-                width="2500"
-                height="1667"
-                loading="eager"
-            />
+        <!-- Rotated Text -->
+        <div class="cs-rotated-text">Wir rücken Sie ins beste Licht!</div>
+
+        <!--Bubble Groups-->
+        <div class="cs-bubbles cs-bubbles1" aria-hidden="true"></div>
+        <div class="cs-bubbles cs-bubbles2" aria-hidden="true"></div>
+        <!-- Background Image, background image added in the css at 1600px for parallax effect -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero_h2500.jpg">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer-t.jpg -->
+            <source media="(min-width: 601px)" srcset="/assets/images/hero_h2500.jpg">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer.jpg -->
+            <img decoding="async" src="/assets/images/hero_h2500.jpg" alt="web designer" width="2250" height="1500" aria-hidden="true">
         </picture>
     </section>
 
     <!-- ============================================ -->
-    <!--                  Services                    -->
+    <!--                    Banner                    -->
     <!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                    aria-hidden="true"
-                    decoding="async"
-                    src="/assets/svgs/service1.svg"
-                    alt="appliance"
-                    width="48"
-                    height="48"
-                />
-            </picture>
-            <h2>Service 1</h2>
-            <p>
-                Talk about the service with keywords people will be searching
-                for it by. Keep it 1-2 sentences.
-            </p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                    aria-hidden="true"
-                    decoding="async"
-                    src="/assets/svgs/service2.svg"
-                    alt="appliance"
-                    width="48"
-                    height="48"
-                />
-            </picture>
-            <h2>Service 2</h2>
-            <p>
-                Talk about the service with keywords people will be searching
-                for it by. Keep it 1-2 sentences.
-            </p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                    aria-hidden="true"
-                    decoding="async"
-                    src="/assets/svgs/service3.svg"
-                    alt="appliance"
-                    width="48"
-                    height="48"
-                />
-            </picture>
-            <h2>Service 3</h2>
-            <p>
-                Talk about the service with keywords people will be searching
-                for it by. Keep it 1-2 sentences.
-            </p>
+    <section class="banner">
+        <div class="cs-container">
+            Maßgeschneidert. Leistungsstark. Fair.
         </div>
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                   Services                   -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="services-1191">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Unsere Leistungen</span>
+                <h2 class="cs-title">Das Rundum-sorglos-Paket für Ihren Webauftritt</h2>
+                <p class="cs-text">
+                    Eine Webseite ist heute mehr als nur eine digitale Visitenkarte: Sie ist das Aushängeschild Ihres Unternehmens – Ihr unermüdlicher Vertriebsprofi, der rund um die Uhr Ihre Leistungen perfekt präsentiert. Und bevor all das ins Spiel kommt, sorgt sie dafür, dass Sie in Suchmaschinen sichtbar werden und Ihre Zielgruppe Sie findet.
+                    <br/><br/>
+                    Wir entwerfen Ihre neue Webseite speziell für Ihre Zielgruppe, entwickeln Sie per Hand ohne Baukasten-Systeme, und optimieren Sie für branchenführende Performance. Das Ergebnis? Eine Webseite, die bei Google glänzt, Ihre Kunden überzeugt und Ihnen langfristig Erfolg bringt.
+                </p>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
+            <!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
+            <div class="cs-wrapper">
+                <!--Car-->
+                <picture class="cs-image">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/box.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png -->
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/box.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png -->
+                    <img loading="lazy" decoding="async" src="/assets/images/box.png" alt="car" width="510" height="193" aria-hidden="true">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png -->
+                </picture>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon"
+                                src="/assets/svgs/gauge.svg"
+                                loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                        </picture>
+                        <!-- Text Grouped For Flexbox-->
+                        <div class="cs-text-group">
+                            <h3 class="cs-h3">Branchenführende Performance</h3>
+                            <p class="cs-item-text">
+                                Wir garantieren einen Google PageSpeed Score von mind. 98/100 Punkten mit jeder Webseite, die wir erstellen.
+                                <br/>
+                                <!--<a href="#">Warum ist das wichtig?</a>-->
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon"
+                                src="/assets/svgs/moneybag.svg" loading="lazy"
+                                decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                        </picture>
+                        <!-- Text Grouped For Flexbox-->
+                        <div class="cs-text-group">
+                            <h3 class="cs-h3">Geld-zurück Garantie</h3>
+                            <p class="cs-item-text">Sollte Sie unser Design auch nach mehreren Anläufen nicht zusagen, erhalten Sie Ihre Anzahlung zurück - ohne wenn und aber.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon" src="/assets/svgs/server.svg"
+                                loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                        </picture>
+                        <!-- Text Grouped For Flexbox-->
+                        <div class="cs-text-group">
+                            <h3 class="cs-h3">Blitzschnelles Hosting mit 99,99% Verfügbarkeit</h3>
+                            <p class="cs-item-text">Mit dem optional verfügbaren CosmoHosting steht Ihre Seite auf stabilen Beinen. Inklusive Backups.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon"
+                                src="/assets/svgs/pen-writing.svg" loading="lazy"
+                                decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                        </picture>
+                        <!-- Text Grouped For Flexbox-->
+                        <div class="cs-text-group">
+                            <h3 class="cs-h3">Faire & transparente Preise</h3>
+                            <p class="cs-item-text">Niemand mag versteckte Kosten. Durch den minimalen Wartungsaufwand sparen Sie Monat zu Monat ein.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon"
+                                src="/assets/svgs/monitor.svg"
+                                loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                        </picture>
+                        <!-- Text Grouped For Flexbox-->
+                        <div class="cs-text-group">
+                            <h3 class="cs-h3">Individuelles, responsives Design</h3>
+                            <p class="cs-item-text">Selbstverständlich sieht Ihre Seite sowohl am PC, am Handy und auch auf Tablets hervorragend aus.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img class="cs-icon"
+                                src="/assets/svgs/law.svg"
+                                loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                        </picture>
+                        <!-- Text Grouped For Flexbox-->
+                        <div class="cs-text-group">
+                            <h3 class="cs-h3">DSGVO konform</h3>
+                            <p class="cs-item-text">Überlassen Sie Datenschutz nicht dem Zufall! Webseiten von Cosmo sind erfüllen alle rechtlichen Anforderungen der DSGVO, ohne zu nerven.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="/kontakt" class="cs-button-12">
+                    Jetzt starten
+                    <picture class="cs-button-wrapper">
+                    <img class="cs-button-icon" src="/assets/svgs/angle-arrow.svg" alt="icon" loading="lazy" decoding="async" width="28" height="28">
+                </picture>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+    <section id="why-choose-1630">
+        <div class="cs-container">
+            <div class="cs-flex">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/laptop_typing.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-8.jpg -->
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/laptop_typing.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-8.jpg -->
+                    <img loading="lazy" decoding="async" src="/assets/images/laptop_typing.png" alt="therapy" width="608" height="400">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-8.jpg -->
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Vorteile</span>
+                    <h2 class="cs-title">Die perfekte Basis für Ihren Erfolg</h2>
+                    <p class="cs-text">
+                        Einmal investiert, hilft Ihnen eine professionelle, auf Ihre Zielgruppe zugeschnittene Webseite, den Fluss an neuen Kundenanfragen nicht abreißen zu lassen. Es handelt sich also um eine Investition, die sich schon innerhalb kürzester Zeit bezahlt macht.
+                        <br/><br/>
+                        Wir setzen nicht auf Baukasten-Systeme wie WordPress oder Wix, bei welchen laufend neue Sicherheitslücken entdeckt werden und dementsprechend viel Wartung notwendig ist. Unsere von Hand programmierten Webseiten mit branchenführender Performance benötigen keine Updates und erfüllen auch nach mehreren Jahren Ihren Zweck hervorragend. 
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="560"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="560"
-                    />
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Non tenetur, iure nihil ipsam qui atque commodi id
-                    voluptatem nesciunt, quis animi fuga cum doloribus! Eaque
-                    laboriosam, unde consectetur iure asperiores ullam.
-                    Consequuntur debitis a voluptatibus vitae optio autem
-                    explicabo quia neque est quas, in placeat. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Doloribus modi
-                    laudantium voluptatibus rem libero error minus quia eligendi
-                    sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">
-                Et orci volutpat, back up generator installations
-            </h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port1-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port1.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port1.jpg"
-                            alt="new hallway"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port4-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port4.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port4.jpg"
-                            alt="new home construction"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port7-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port7.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port7.jpg"
-                            alt="building a new wall"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port2-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port2.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port2.jpg"
-                            alt="new kitchen"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port5-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port5.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port5.jpg"
-                            alt="apartment addition"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port8-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port8.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port8.jpg"
-                            alt="kew kitchen cabinets"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port3-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port3.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port3.jpg"
-                            alt="new kitchen"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port6-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port6.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port6.jpg"
-                            alt="apartment addition"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port9-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port9.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port9.jpg"
-                            alt="kew kitchen cabinets"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
+                    <a href="/kontakt" class="cs-button-12">
+                            Jetzt starten
+                            <picture class="cs-button-wrapper">
+                            <img class="cs-button-icon" src="/assets/svgs/angle-arrow.svg" alt="icon" loading="lazy" decoding="async" width="28" height="28">
+                        </picture>
+                    </a>
                 </div>
             </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                dolor volutpat porttitor sagittis nunc nisl. Sagittis sit
-                pellentesque gravida viverra. Leo ut sed euismod tortor risus
-                et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
             <ul class="cs-card-group">
-                <!-- Review 1 -->
                 <li class="cs-item">
-                    <img
-                        class="cs-item-img"
-                        aria-hidden="true"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                        alt="profile picture"
-                        width="80"
-                        height="80"
-                    />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin.
-                        Consequat dolor habitasse nam sed tempor. Viverra magna
-                        pharetra rhoncus, nec sed ullamcorper lectus et. Auctor
-                        velit diam fermentum consequat. Feugiat viverra massa
-                        urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                        class="cs-item-stars"
-                        aria-hidden="true"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                        alt="stars"
-                        width="96"
-                        height="16"
-                    />
+                    <h3 class="cs-h3">
+                        <picture class="cs-wrapper">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/moneybag.svg" alt="icon" width="24" height="24">
+                        </picture>
+                    Verkaufsorientiert
+                </h3>
+                    <p class="cs-item-text">
+                    Mehr Kundenanfragen erhalten, Termine online buchen, Mitarbeiter finden: Im Zentrum des Designs steht Ihr tatsächliches Ziel. Wir nutzen eine Mischung aus bewährten Fragebögen und dem persönlichen, individuellen Zugang, um Ihren Ansprüchen gerecht zu werden.
+                </p>
                 </li>
-                <!-- Review 2 -->
                 <li class="cs-item">
-                    <img
-                        class="cs-item-img"
-                        aria-hidden="true"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                        alt="profile picture"
-                        width="80"
-                        height="80"
-                    />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin.
-                        Consequat dolor habitasse nam sed tempor. Viverra magna
-                        pharetra rhoncus, nec sed ullamcorper lectus et. Auctor
-                        velit diam fermentum consequat. Feugiat viverra massa
-                        urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                        class="cs-item-stars"
-                        aria-hidden="true"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                        alt="stars"
-                        width="96"
-                        height="16"
-                    />
+                    <h3 class="cs-h3">
+                        <picture class="cs-wrapper">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/accesibility.svg" alt="icon" width="28" height="28">
+                        </picture>
+                    Barrierefrei
+                </h3>
+                    <p class="cs-item-text">
+                    Die Barrierefreiheit einer Webseite ist ein grundlegendes Qualitätsmerkmal. Nicht nur ermöglichen Sie auch Personen mit Einschränkungen (z.B. Sehschwäche), Ihr Angebot in Anspruch zu nehmen - auch bei Suchmaschinen (z.B. Google) wird eine barrierefreie Webseite besser bewertet. Eine Win-Win-Situation!
+                </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <picture class="cs-wrapper">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/law.svg" alt="icon" width="24" height="24">
+                        </picture>
+                    DSGVO-konform
+                </h3>
+                    <p class="cs-item-text">
+                    Wer Datenschutz dem Zufall überlässt, riskiert empfindliche Strafzahlungen und setzt das Vertrauen möglicher Kunden auf´s Spiel. Vertrauen Sie lieber dem Profi: Webseiten von Cosmo erfüllen alle rechtlichen Anforderungen der DSGVO, ohne zu nerven.
+                </p>
                 </li>
             </ul>
-            <a
-                aria-label="read more reviews"
-                href="/reviews"
-                class="cs-button-solid"
-                >Our Reviews</a
-            >
         </div>
     </section>
 
-    {% include 'components/cta.html' %}
+    <!-- ============================================ -->
+    <!--                   Pricing                    -->
+    <!-- ============================================ -->
+    <section id="pricing-1260">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Preisliste</span>
+                <h2 class="cs-title">Faire Preise ohne versteckte Kosten</h2>
+                <p class="cs-text">
+                    Unsere Preise sind klar und transparent. Sie gehen bei uns weder Wartungsverträge noch langfristige Bindungen ein. Nach Projektabschluss gehören Ihnen sämtliche Rechte an der Website – Sie bleiben vollkommen unabhängig.
+                    <br/><br/>
+                    <b>Geld-zurück-Garantie:</b> Sollten Sie trotz mehrerer Überarbeitungen mit dem Design nicht zufrieden sein, übernehmen wir die Verantwortung. In diesem Fall erstatten wir Ihnen die Anzahlung vollständig zurück.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-picture-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/monitor.svg" alt="checkmark" width="44" height="44">
+                    </picture>
+                    <span class="cs-package">Webseiten-Paket für KMUs</span>
+                    <span class="cs-price">
+                        € 3.600
+                        <span class="cs-duration">Einmalzahlung</span>
+                    </span>
+                    <p class="cs-item-text">
+                        Eine für Ihr Unternehmen individuell gestaltete, hochperformante Webseite.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            Planung, Design & Entwicklung
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            5 Seiten (danach +120€/Seite)
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            +250€ für einen Blog
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            PageSpeed Score mind. 98/100
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            Responsives Design (Handy, Tablet, Desktop)
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            Einrichtung von Google Business und Google Search Console
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                                Grundlegende Suchmaschinenoptimierung
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary.svg" alt="checkmark" width="18" height="18">
+                            Geld-zurück Garantie (Designphase)
+                        </li>
+                    </ul>
+                    <a href="/kontakt" class="cs-button-12">
+                        Jetzt starten
+                        <picture class="cs-button-wrapper">
+                            <img class="cs-button-icon" src="/assets/svgs/angle-arrow.svg" alt="icon" loading="lazy" decoding="async" width="28" height="28">
+                        </picture>
+                    </a>
+                </li>
+                <li class="cs-item cs-popular">
+                    <span class="cs-popular-tag">Empfohlen</span>
+                    <picture class="cs-picture">
+                        <img class="cs-picture-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/server-primary-light.svg" alt="checkmark" width="44" height="44">
+                    </picture>
+                    <span class="cs-package">CosmoHosting</span>
+                    <span class="cs-price">
+                    € 15
+                    <span class="cs-duration">/Monat</span>
+                    </span>
+                    <p class="cs-item-text">
+                        Unser zuverlässiges, blitzschnelles Hosting ist das perfekte Zuhause für Ihre neue Webseite.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary-light.svg" alt="checkmark" width="18" height="18">
+                            Blitzschnelle Ladezeiten
+                        </li>
+                        <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary-light.svg" alt="checkmark" width="18" height="18">
+                            mind. 99,99% Verfügbarkeit
+                        </li>
+                        <li class="cs-li">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/round-check-primary-light.svg" alt="checkmark" width="18" height="18">
+                            inkl. Backups
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--Bubble Groups-->
+        <div class="cs-bubbles cs-bubbles1" aria-hidden="true"></div>
+        <div class="cs-bubbles cs-bubbles2" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+    <section id="faq-1458">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/beratung_sw.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png -->
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/beratung_sw.png">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png -->
+                    <img loading="lazy" decoding="async" src="/assets/images/beratung_sw.png" alt="body shop" width="522" height="609" aria-hidden="true">
+                    <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png -->
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Wissenwertes</span>
+                <h2 class="cs-title">Häufig gestellte Fragen</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Was passiert, wenn mir das Design nicht gefällt?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Brauche ich bereits ein Logo, Visitenkarten, oder ähnliches?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Wie könnt Ihr eine von Hand programmierte, individuell gestaltete Webseite zu diesem Preis anbieten?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Warum verwendet ihr keine Baukastensysteme wie z.B. Wordpress oder Wix?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Kann auch ein Blog integriert werden?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                </ul>
+                <a href="/faq" class="cs-button-solid">Alle FAQs anzeigen</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}

@@ -1,0 +1,69 @@
+---
+title: "Impressum | Cosmo Digital"
+preloadImg: "/assets/images/typing_on_laptop.png"
+permalink: "impressum/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/imprint.css"/>
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1106-1112">
+        <div class="cs-container">
+            <span class="cs-int-title">Impressum</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Start</a>
+                <a href="/impressum" class="cs-link cs-active">Impressum</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/typing_on_laptop.png">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg -->
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/typing_on_laptop.png">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg -->
+            <img decoding="async" src="/assets/images/typing_on_laptop.png" alt="mechanic" width="1280" height="568" aria-hidden="true">
+            <!-- https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg -->
+        </picture>
+    </div>
+
+    <section id="content-page-1535">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">Impressum</h1>
+                <p>
+                    Cosmo Digital<br/>
+                    Jan Erik Schlorf<br/>
+                    Straße des 12. Februar 8E<br/>
+                    2630 Ternitz<br/>
+                    Austria
+                    <br/><br/>
+                    Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik
+                    <br/><br/>
+                    Website: www.cosmo-digital.at<br/>
+                    E-Mail Adresse: hallo@cosmo-digital.at
+                    <br/><br/>
+                    UID: ATU75273268 
+                </p>
+                <p>
+                    <h2>Haftung für Inhalte</h2>
+                    Die Inhalte der Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Es wird keine Verantwortung für jegliche Dienstleistungen Dritter übernommen.
+
+                    <h2>Urheberrechte</h2>
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
+                </p>
+            </div>
+        </div>
+        <div class="cs-bubbles" aria-hidden="true"></div>
+    </section>
+
+{% endblock %}

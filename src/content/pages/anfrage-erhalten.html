@@ -1,0 +1,62 @@
+---
+title: "Anfrage erhalten | Cosmo Digital"
+description: "Wir haben Ihre Anfrage erhalten und melden uns in schnellstmöglich bei Ihnen!"
+permalink: "anfrage-erhalten/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/anfrage-erhalten.css"/>
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <div id="spinner" class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Form -->
+            <div id="cs-form" name="Contact Form" method="post">
+                <div id="not-done">
+                    <div class="cs-content">
+                        <h1 class="cs-title">Danke für Ihre Anfrage!</h1>
+                        <p class="cs-text">
+                            Wir melden uns schnellstmöglich bei Ihnen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">E-Mail</span>
+                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
+                <!--Phone-->
+                <span class="cs-header">Telefon</span>
+                <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                <!--Address-->
+                <span class="cs-header">Adresse</span>
+                <a class="cs-link" target="_blank" href="{{ client.address.mapLink }}">
+                    {{ client.address.lineOne }}<br/>
+                    <span class="cs-block">{{ client.address.zip }}
+                        {{ client.address.city }}<br/>Österreich</span>
+                </a>
+
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="/assets/images/jan_mauer.jpg"/>
+                    <img aria-hidden="true" decoding="async" src="/assets/images/jan_mauer.jpg" alt="building" loading="lazy" width="2500" height="1667"/>
+                </picture>
+            </div>
+        </div>
+    </section>
+{% endblock %}

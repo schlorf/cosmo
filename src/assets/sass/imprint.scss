@@ -1,0 +1,402 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-1535 {
+        padding: var(--sectionPadding);
+        /* 190px - 268px */
+        padding-top: clamp(11.875rem, 25vw, 16.75rem);
+        /* 100px - 150px */
+        padding-bottom: clamp(6.25rem, 12vw, 9.375rem);
+        /* clips the line from causing overflow issues for going off screen */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            /* 8px - 12px */
+            gap: clamp(.5rem, 1vw, .75rem);
+        }
+
+        .cs-int-title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        .cs-breadcrumbs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-link {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.2em;
+            text-decoration: none;
+            color: var(--bodyTextColor);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:last-of-type {
+
+                /* remove the chevron on the last list item */
+                &::after {
+                    display: none;
+                }
+            }
+
+            &:after {
+                /* chevron */
+                content: '';
+                width: calc(7 / 16 * 1rem);
+                height: calc(12 / 16 * 1rem);
+                margin: 0 calc(16 / 16 * 1rem);
+                background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-chevron.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                display: block;
+            }
+
+            &.cs-active {
+                color: var(--primary);
+            }
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* gradient overlay */
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: #FFF3EC;
+                opacity: .8;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+
+        .cs-mask {
+            --maskBG: #ffffff;
+
+            width: 100%;
+            height: auto;
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            z-index: 100;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-1535 {
+        .cs-background {
+            &:before {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(255, 243, 236, 0.90) 23.05%, rgba(255, 243, 236, 0.00) 80.08%);
+                opacity: 1;
+            }
+        }
+
+        .cs-mask {
+            --maskBG: var(--dark);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-2rem);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes floatAnimation2 {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-3rem);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #content-page-1535 {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        /* clips the wave background from causing overflow issues when it goes off screen */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 40px - 64px */
+            gap: clamp(2.5rem, 4vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            color: var(--headerColor);
+        }
+
+        h2 {
+            font-size: calc(32 / 16 * 1rem);
+            margin-top: calc(32 / 16 * 1rem);
+        }
+
+        h3 {
+            font-size: calc(24 / 16 * 1rem);
+            color: var(--primary);
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-size: calc(20 / 16 * 1rem);
+        }
+
+        .cs-button-solid {
+            margin-bottom: calc(32 / 16 * 1rem);
+        }
+
+        .cs-no-margin {
+            margin: 0;
+        }
+
+        .cs-color {
+            color: var(--primary);
+        }
+
+        p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            color: var(--bodyTextColor);
+
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+                filter: brightness(120%);
+            }
+        }
+
+        ol,
+        ul {
+            padding-left: calc(24 / 16 * 1rem);
+            margin: 0 0 calc(32 / 16 * 1rem) 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: calc(16 / 16 * 1rem);
+        }
+
+        ul {
+            li {
+                list-style: none;
+                color: inherit;
+                position: relative;
+
+                &:before {
+                    /* custom list bullet */
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: calc(10 / 16 * 1rem);
+                    left: calc(-12 / 16 * 1rem);
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cs-image-group {
+            width: calc(522 / 16 * 1em);
+            height: calc(540 / 16 * 1em);
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            border-radius: calc(40 / 16 * 1em);
+            /* clips the corners of the children around the border radius */
+            overflow: hidden;
+            /* makes it cover the parent dimensions */
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                /* makes it cover the parent like a backgorund image */
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        .cs-flower {
+            width: calc(153 / 16 * 1em);
+            height: auto;
+            position: absolute;
+            right: calc(-32 / 16 * 1em);
+            top: calc(-36 / 16 * 1em);
+            z-index: 10;
+        }
+
+        .cs-floater {
+            width: calc(710 / 16 * 1em);
+            height: auto;
+            position: absolute;
+            left: calc(150 / 16 * 1em);
+            top: calc(400 / 16 * 1em);
+            z-index: -1;
+            animation-name: floatAnimation2;
+            animation-duration: 14s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #content-page-1535 {
+        .cs-container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+
+        .cs-image-group {
+            font-size: min(1.3vw, 1em);
+            display: block;
+            /* sends it to the right in the 2nd position */
+            order: 2;
+        }
+    }
+}
